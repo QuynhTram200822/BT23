@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Test</title>
+
+</head>
+
+<body>
+  <form>
+    <div>
+      <label>Title</label>
+      <input type="text" name="title" class="title">
+    </div>
+    <div>
+      <label>Description</label>
+      <input type="text" name="description" class="description">
+    </div>
+    <div>
+      <label>Price</label>
+      <input type="number" name="price" class="price">
+    </div>
+    <div>
+      <button id="create">Create</button>
+    </div>
+  </form>
+
+  <div>
+    <h2>Product List</h2>
+    <ul id="list-products">
+    </ul>
+  </div>
+
+  <div class="edit-form" id="editForm">
+    <h3>Edit Product</h3>
+    <form id="formEdit">
+      <input type="hidden" id="editProductId">
+      <label for="editProductTitle">Title:</label>
+      <input type="text" id="editProductTitle" required>
+      <br>
+      <label for="editProductDescription">Description:</label>
+      <input type="text" id="editProductDescription" required>
+      <br>
+      <label for="editProductPrice">Price:</label>
+      <input type="number" id="editProductPrice">
+      <br>
+      <button type="submit">Save</button>
+      <button type="button" id="cancelEdit">Cancel</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
